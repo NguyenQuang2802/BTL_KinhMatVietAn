@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service_NhapKho" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_NhapKho_Insert_NhapKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_NhapKho" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_Insert_NhapKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_NhapKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_del_nhapkho_InputMessage">
+    <wsdl:part name="parameters" element="tns:del_nhapkho" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_del_nhapkho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:del_nhapkhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_check_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:check_ID" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_check_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:check_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_get_soluongKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_soluongKho" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_get_soluongKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_soluongKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_DGV_Kho_InputMessage">
+    <wsdl:part name="parameters" element="tns:DGV_Kho" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_DGV_Kho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DGV_KhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_update_SL_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_SL" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_update_SL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_SLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_get_TongTien_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_TongTien" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_get_TongTien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_TongTienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_update_TongTien_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_TongTien" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_update_TongTien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_TongTienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_search_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_Name" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_search_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_search_Loai_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_Loai" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_search_Loai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_LoaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_search_Date_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_Date" />
+  </wsdl:message>
+  <wsdl:message name="IService_NhapKho_search_Date_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_DateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService_NhapKho">
+    <wsdl:operation name="Insert_NhapKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/Insert_NhapKho" message="tns:IService_NhapKho_Insert_NhapKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/Insert_NhapKhoResponse" message="tns:IService_NhapKho_Insert_NhapKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="del_nhapkho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/del_nhapkho" message="tns:IService_NhapKho_del_nhapkho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/del_nhapkhoResponse" message="tns:IService_NhapKho_del_nhapkho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="check_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/check_ID" message="tns:IService_NhapKho_check_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/check_IDResponse" message="tns:IService_NhapKho_check_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_soluongKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/get_soluongKho" message="tns:IService_NhapKho_get_soluongKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/get_soluongKhoResponse" message="tns:IService_NhapKho_get_soluongKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DGV_Kho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/DGV_Kho" message="tns:IService_NhapKho_DGV_Kho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/DGV_KhoResponse" message="tns:IService_NhapKho_DGV_Kho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_SL">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/update_SL" message="tns:IService_NhapKho_update_SL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/update_SLResponse" message="tns:IService_NhapKho_update_SL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_TongTien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/get_TongTien" message="tns:IService_NhapKho_get_TongTien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/get_TongTienResponse" message="tns:IService_NhapKho_get_TongTien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_TongTien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/update_TongTien" message="tns:IService_NhapKho_update_TongTien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/update_TongTienResponse" message="tns:IService_NhapKho_update_TongTien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/search_Name" message="tns:IService_NhapKho_search_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/search_NameResponse" message="tns:IService_NhapKho_search_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_Loai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/search_Loai" message="tns:IService_NhapKho_search_Loai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/search_LoaiResponse" message="tns:IService_NhapKho_search_Loai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_Date">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_NhapKho/search_Date" message="tns:IService_NhapKho_search_Date_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_NhapKho/search_DateResponse" message="tns:IService_NhapKho_search_Date_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService_NhapKho" type="tns:IService_NhapKho">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert_NhapKho">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/Insert_NhapKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="del_nhapkho">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/del_nhapkho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="check_ID">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/check_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_soluongKho">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/get_soluongKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DGV_Kho">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/DGV_Kho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_SL">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/update_SL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_TongTien">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/get_TongTien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_TongTien">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/update_TongTien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_Name">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/search_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_Loai">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/search_Loai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_Date">
+      <soap:operation soapAction="http://tempuri.org/IService_NhapKho/search_Date" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service_NhapKho">
+    <wsdl:port name="BasicHttpBinding_IService_NhapKho" binding="tns:BasicHttpBinding_IService_NhapKho">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_NhapKho/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

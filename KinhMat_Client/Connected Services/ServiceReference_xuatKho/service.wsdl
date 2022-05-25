@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service_XuatKho" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_XuatKho_DGV_xuatKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:DGV_xuatKho" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_DGV_xuatKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DGV_xuatKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_insert_xuatKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:insert_xuatKho" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_insert_xuatKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insert_xuatKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_check_IDXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:check_IDXuat" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_check_IDXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:check_IDXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_get_soLuongXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_soLuongXuat" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_get_soLuongXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_soLuongXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_update_SLXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_SLXuat" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_update_SLXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_SLXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_get_tongTienXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_tongTienXuat" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_get_tongTienXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_tongTienXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_update_tongTienXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_tongTienXuat" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_update_tongTienXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_tongTienXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_search_loaiXk_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_loaiXk" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_search_loaiXk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_loaiXkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_search_dateXK_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_dateXK" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_search_dateXK_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_dateXKResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_search_nameXK_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_nameXK" />
+  </wsdl:message>
+  <wsdl:message name="IService_XuatKho_search_nameXK_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_nameXKResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService_XuatKho">
+    <wsdl:operation name="DGV_xuatKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/DGV_xuatKho" message="tns:IService_XuatKho_DGV_xuatKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/DGV_xuatKhoResponse" message="tns:IService_XuatKho_DGV_xuatKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_xuatKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/insert_xuatKho" message="tns:IService_XuatKho_insert_xuatKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/insert_xuatKhoResponse" message="tns:IService_XuatKho_insert_xuatKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="check_IDXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/check_IDXuat" message="tns:IService_XuatKho_check_IDXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/check_IDXuatResponse" message="tns:IService_XuatKho_check_IDXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_soLuongXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/get_soLuongXuat" message="tns:IService_XuatKho_get_soLuongXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/get_soLuongXuatResponse" message="tns:IService_XuatKho_get_soLuongXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_SLXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/update_SLXuat" message="tns:IService_XuatKho_update_SLXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/update_SLXuatResponse" message="tns:IService_XuatKho_update_SLXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_tongTienXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/get_tongTienXuat" message="tns:IService_XuatKho_get_tongTienXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/get_tongTienXuatResponse" message="tns:IService_XuatKho_get_tongTienXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_tongTienXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/update_tongTienXuat" message="tns:IService_XuatKho_update_tongTienXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/update_tongTienXuatResponse" message="tns:IService_XuatKho_update_tongTienXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_loaiXk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/search_loaiXk" message="tns:IService_XuatKho_search_loaiXk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/search_loaiXkResponse" message="tns:IService_XuatKho_search_loaiXk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_dateXK">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/search_dateXK" message="tns:IService_XuatKho_search_dateXK_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/search_dateXKResponse" message="tns:IService_XuatKho_search_dateXK_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_nameXK">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_XuatKho/search_nameXK" message="tns:IService_XuatKho_search_nameXK_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_XuatKho/search_nameXKResponse" message="tns:IService_XuatKho_search_nameXK_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService_XuatKho" type="tns:IService_XuatKho">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DGV_xuatKho">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/DGV_xuatKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_xuatKho">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/insert_xuatKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="check_IDXuat">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/check_IDXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_soLuongXuat">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/get_soLuongXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_SLXuat">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/update_SLXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_tongTienXuat">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/get_tongTienXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_tongTienXuat">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/update_tongTienXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_loaiXk">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/search_loaiXk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_dateXK">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/search_dateXK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_nameXK">
+      <soap:operation soapAction="http://tempuri.org/IService_XuatKho/search_nameXK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service_XuatKho">
+    <wsdl:port name="BasicHttpBinding_IService_XuatKho" binding="tns:BasicHttpBinding_IService_XuatKho">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_XuatKho/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

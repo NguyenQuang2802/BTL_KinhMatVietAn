@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service_SanPham" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_SanPham_Insert_NhapHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_NhapHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_Insert_NhapHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_NhapHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_edit_NhapHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:edit_NhapHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_edit_NhapHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:edit_NhapHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_del_NhapHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:del_NhapHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_del_NhapHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:del_NhapHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_DGV_NhapHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:DGV_NhapHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_DGV_NhapHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DGV_NhapHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_Search_NhapHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_NhapHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_Search_NhapHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_NhapHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_SoLuongHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_SoLuongHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_SoLuongHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_SoLuongHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_update_SoLuongHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_SoLuongHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_update_SoLuongHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_SoLuongHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_IDHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_IDHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_IDHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_IDHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_DonGiaHang_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_DonGiaHang" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_DonGiaHang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_DonGiaHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_GiaNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_GiaNhap" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_GiaNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_GiaNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Count" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_tenSP_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_tenSP" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_tenSP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_tenSPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_maLoai_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_maLoai" />
+  </wsdl:message>
+  <wsdl:message name="IService_SanPham_get_maLoai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_maLoaiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService_SanPham">
+    <wsdl:operation name="Insert_NhapHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/Insert_NhapHang" message="tns:IService_SanPham_Insert_NhapHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/Insert_NhapHangResponse" message="tns:IService_SanPham_Insert_NhapHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="edit_NhapHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/edit_NhapHang" message="tns:IService_SanPham_edit_NhapHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/edit_NhapHangResponse" message="tns:IService_SanPham_edit_NhapHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="del_NhapHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/del_NhapHang" message="tns:IService_SanPham_del_NhapHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/del_NhapHangResponse" message="tns:IService_SanPham_del_NhapHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DGV_NhapHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/DGV_NhapHang" message="tns:IService_SanPham_DGV_NhapHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/DGV_NhapHangResponse" message="tns:IService_SanPham_DGV_NhapHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_NhapHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/Search_NhapHang" message="tns:IService_SanPham_Search_NhapHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/Search_NhapHangResponse" message="tns:IService_SanPham_Search_NhapHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_SoLuongHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_SoLuongHang" message="tns:IService_SanPham_get_SoLuongHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_SoLuongHangResponse" message="tns:IService_SanPham_get_SoLuongHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_SoLuongHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/update_SoLuongHang" message="tns:IService_SanPham_update_SoLuongHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/update_SoLuongHangResponse" message="tns:IService_SanPham_update_SoLuongHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_IDHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_IDHang" message="tns:IService_SanPham_get_IDHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_IDHangResponse" message="tns:IService_SanPham_get_IDHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_DonGiaHang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_DonGiaHang" message="tns:IService_SanPham_get_DonGiaHang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_DonGiaHangResponse" message="tns:IService_SanPham_get_DonGiaHang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_GiaNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_GiaNhap" message="tns:IService_SanPham_get_GiaNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_GiaNhapResponse" message="tns:IService_SanPham_get_GiaNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_Count" message="tns:IService_SanPham_get_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_CountResponse" message="tns:IService_SanPham_get_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_tenSP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_tenSP" message="tns:IService_SanPham_get_tenSP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_tenSPResponse" message="tns:IService_SanPham_get_tenSP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_maLoai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_SanPham/get_maLoai" message="tns:IService_SanPham_get_maLoai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_SanPham/get_maLoaiResponse" message="tns:IService_SanPham_get_maLoai_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService_SanPham" type="tns:IService_SanPham">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert_NhapHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/Insert_NhapHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="edit_NhapHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/edit_NhapHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="del_NhapHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/del_NhapHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DGV_NhapHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/DGV_NhapHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_NhapHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/Search_NhapHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_SoLuongHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_SoLuongHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_SoLuongHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/update_SoLuongHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_IDHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_IDHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_DonGiaHang">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_DonGiaHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_GiaNhap">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_GiaNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Count">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_tenSP">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_tenSP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_maLoai">
+      <soap:operation soapAction="http://tempuri.org/IService_SanPham/get_maLoai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service_SanPham">
+    <wsdl:port name="BasicHttpBinding_IService_SanPham" binding="tns:BasicHttpBinding_IService_SanPham">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_SanPham/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

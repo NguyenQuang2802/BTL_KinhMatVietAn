@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7da880c5-1780-48a3-8494-c5640757c8b7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_SanPham/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="d3a3765f-f08d-41ec-a4fe-25129d48f5b2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_SanPham/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="893e5ae1-827a-4575-902f-0b982d278dbf" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_SanPham/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6b391701-6ab5-4d46-acf1-d8491b61d54f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_SanPham/mex" />
+    <MetadataFile FileName="System.Data.xsd" MetadataType="Schema" ID="cb4223ae-5c4a-402b-8e3f-c7876c92e584" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_SanPham/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

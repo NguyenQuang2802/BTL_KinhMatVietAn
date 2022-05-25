@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="df943c3a-5b0d-4eaf-924d-f8a99445cc51" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_HoaDon/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c8fcaa13-0adc-4888-b76c-f9e02c490f1f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_HoaDon/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="11c4a6c1-a222-47d4-a35b-0cdb1db1d51c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_HoaDon/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="3d579301-097b-457b-ab75-6bcb4b613141" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_HoaDon/mex" />
+    <MetadataFile FileName="System.Data.xsd" MetadataType="Schema" ID="b3526bdb-e8d5-46c4-9f45-f91bc6fce0d5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/KinhMat_Server/Service_HoaDon/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
